@@ -162,5 +162,27 @@ def count_primes(num):
     print(prime)
     print(len(prime))
 
+# count_primes(100)
 
-count_primes(100)
+
+# def print_big(letter):
+#     dict = {}
+#     dict[letter] = "aaa"
+#     print(dict.keys())
+
+# for key,val in dict.items() <---  go through keys and values
+
+def print_big(letter):      #works
+    dict = {}
+    a = "  *  \n * * \n*****\n*   *"
+    b = "BBB"
+    c = "CCC"
+    for value in ['a','b','c']:
+        dict[value] = eval(value)       # <--- variables have to have same names as in list
+    if letter in ['a','b','c']:
+        print(dict[letter])
+
+print_big('a')
+
+# d = {'key1':'value1','key2':'value2'}
+# print(d.keys())
