@@ -171,7 +171,7 @@ def count_primes(num):
 #     print(dict.keys())
 
 # for key,val in dict.items() <---  go through keys and values
-
+# print(d.keys())
 def print_big(letter):      #works
     dict = {}
     a = "  *  \n * * \n*****\n*   *"
@@ -184,5 +184,3 @@ def print_big(letter):      #works
 
 print_big('a')
 
-# d = {'key1':'value1','key2':'value2'}
-# print(d.keys())
