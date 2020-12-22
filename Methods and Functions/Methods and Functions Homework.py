@@ -92,3 +92,19 @@ import math
 #     return s == s[::-1]
 #
 # print(palindrome('helleh'))
+
+# Check if every letter is in a string
+import string
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    str1 = str1.replace(' ', '')
+    newset = set(str1.lower())
+    alphabet = set(alphabet)
+    subset = newset.issubset(alphabet) # or intersection could be used. issuperset() - the opposite
+    intersect = newset.intersection(alphabet)
+    if len(intersect) == len(alphabet):
+        print("Entire alphabet is in the string.")
+    else:
+        print("The alphabet is not presented in this string.")
+
+ispangram("The quick brown fox jumps over the lazy dog")
+
