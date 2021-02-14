@@ -10,47 +10,47 @@ import math
 # vol(2)
 
 
-# def ran_check(num,low,high):
-#    if num in range(low,high + 1):
-#        print(f'{num} is in the range between {low} and {high}.')
-#    else:
-#        print(f'{num} is out of the range.')
+def ran_check(num,low,high):
+   if num in range(low,high + 1):
+       print(f'{num} is in the range between {low} and {high}.')
+   else:
+       print(f'{num} is out of the range.')
 #
 # ran_check(5, 2, 7)
 
 
 ## With booleans
-# def ran_bool(num,low,high):
-#     if num in range(low,high + 1):
-#         return True
-#     else:
-#         return False
+def ran_bool(num,low,high):
+    if num in range(low,high + 1):
+        return True
+    else:
+        return False
 # print(ran_bool(3, 1, 10))
 
 
 ### Calculate the number of uppercase and lowercase. Or in solution a dict can be used instead!
 # (dictionary with 2 keys: "upper" and "lower")
-# def up_low(s):
-#     up = ''
-#     low = ''
-#     for letter in s:
-#         if letter.isupper():
-#             up += letter
-#         elif letter.islower():
-#             low += letter
-#     print(len(up),len(low))
-#
+def up_low(s):
+    up = ''
+    low = ''
+    for letter in s:
+        if letter.isupper():
+            up += letter
+        elif letter.islower():
+            low += letter
+    print(len(up),len(low))
+
 # s = 'Hello Mr. Rogers, how are you this fine Tuesday?'
 # up_low(s)
 
 
 ### Unique variables in the list
-# def unique_list(lst):
-#     uniq = []
-#     for num in lst:
-#         if num not in uniq:
-#             uniq.append(num)
-#     print(uniq)
+def unique_list(lst):
+    uniq = []
+    for num in lst:
+        if num not in uniq:
+            uniq.append(num)
+    print(uniq)
 
 # ?? try filter and lambda
 # uniq = []
@@ -58,10 +58,10 @@ import math
 # print([uniq.append(num) for num in lst if num not in uniq])
 
 # Using set() which returns only unique values
-# def unique_list(lst):
-#     newset = set(lst)
-#     unique = list(newset)
-#     print(unique)
+def unique_list(lst):
+    newset = set(lst)
+    unique = list(newset)
+    print(unique)
 # unique_list([1,1,1,1,2,2,3,3,3,3,4,5])
 
 # using numpy unique
